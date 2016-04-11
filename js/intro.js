@@ -34,3 +34,25 @@ if( myName.length == 0 ) {
 } else if( myName.length > 10 ) {
 	console.log( "your name must be at most 10 characters. You have written " + myName.length );
 }
+
+// An array ( list, collection etc ) of people - can be used to display latest blog posts, imgs etc
+var people = ["Tom","Chop","cones"];
+
+console.log( people );
+
+console.log( people[0] )
+
+//loop over all te people in the people array and display their name in the console     
+// ( i is short for iteration )
+for( var i = 0; i < people.length; i++ ) {
+	console.log( people[i] );
+}
+
+// Tell javascript to find the button with the id "Hello"
+
+var helloButton = document.querySelector("#hello");
+
+// Listen for clicks on the hello button
+helloButton.onclick= function(){
+	alert("your a pez g");
+}
