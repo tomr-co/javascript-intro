@@ -54,5 +54,41 @@ var helloButton = document.querySelector("#hello");
 
 // Listen for clicks on the hello button
 helloButton.onclick= function(){
-	alert("your a pez g");
+	alert("hell");
 }
+
+// A function that calculates the grand total
+function calculateGrandTotal( prices ) {
+
+	console.log( prices );
+
+	//create a variable to hold the grand total.
+	var grandTotal = 0;
+
+	//loop over all the prices
+	for(var i = 0; i < prices.length; i++)  {
+		grandTotal = grandTotal + prices[i];
+	}
+
+	//Display the Grand total
+	console.log( grandTotal );
+
+}
+
+//some shopping carts
+var cart1 = [20, 15, 60, 90, 100];
+var cart2 = [10.99, 9.99, 60.99, 999.99]
+
+
+//below code runs the function
+
+calculateGrandTotal(cart1);
+calculateGrandTotal(cart2);
+
+
+
+
+
+
+
+
